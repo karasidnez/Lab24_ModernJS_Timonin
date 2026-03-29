@@ -112,17 +112,56 @@
 // const updated = { ...person, age: 31, occupation: "Developer" };
 // console.log("Обновлённый объект:", updated);
 
-console.log("Rest_openatop");
+// console.log("Rest_openatop");
 
-function sum(...numbers) {
-    return numbers.reduce((total, num) => total + num, 0);
-}
+// function sum(...numbers) {
+//     return numbers.reduce((total, num) => total + num, 0);
+// }
 
-console.log("Сумма 1,2,3:", sum(1, 2, 3));
-console.log("Сумма 1,2,3,4,5:", sum(1, 2, 3, 4, 5));
+// console.log("Сумма 1,2,3:", sum(1, 2, 3));
+// console.log("Сумма 1,2,3,4,5:", sum(1, 2, 3, 4, 5));
 
-const numbers = [10, 20, 30, 40, 50];
-const [first, second, ...rest] = numbers;
-console.log("Первое число:", first);
-console.log("Второе число:", second);
-console.log("Остальные числа:", rest);
+// const numbers = [10, 20, 30, 40, 50];
+// const [first, second, ...rest] = numbers;
+// console.log("Первое число:", first);
+// console.log("Второе число:", second);
+// console.log("Остальные числа:", rest);
+
+// const arrA = [1, 2, 3];
+// const arrB = [4, 5, 6];
+
+// const combinedArray = [...arrA, ...arrB];
+// console.log("Объединённый массив:", combinedArray);
+
+// function findMax(...numbers) {
+//     return Math.max(...numbers);
+// }
+
+// console.log("Максимум из 10, 20, 30:", findMax(10, 20, 30));
+// console.log("Максимум из 5, 15, 25, 35:", findMax(5, 15, 25, 35));
+
+// const obj1 = { name: "ХХ", age: 25 };
+// const obj2 = { city: "Москва", year: 2005 };
+
+// const mergedObject = { ...obj1, ...obj2 };
+// console.log("Объединённый объект:", mergedObject);
+
+// import { greet, add, PI } from "./utils.js";
+
+// console.log("Модули");
+// console.log(greet("Алексей"));
+// console.log("5 + 3 =", add(5, 3));
+// console.log("Значение PI:", PI);
+
+// import { multiply as умножить } from "./utils.js";
+// console.log("4 * 7 =", умножить(4, 7));
+
+// import * as Utils from "./utils.js";
+// console.log(Utils.greet("Мария"));
+// console.log("Умножение:", Utils.multiply(3, 9));
+
+import { square, cube, E } from "./math.js";
+
+console.log(square(5));
+console.log(cube(5));
+console.log(E);
